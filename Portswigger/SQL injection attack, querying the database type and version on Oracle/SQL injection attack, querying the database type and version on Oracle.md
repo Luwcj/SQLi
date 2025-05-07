@@ -10,11 +10,11 @@ Kiểm tra xem có bao nhiêu cột bên trong bảng:
 Tiếp theo ta kiểm tra xem kiểu dữ liệu bên trong từng cột của bảng:
 - `' UNION SELECT 'ahihi','hehehe' FROM dual--` (mặc định bên trong Oracle luôn có bảng ảo `dual` )
 
-![](https://cdn.discordapp.com/attachments/1124588087931043891/1134408970359013442/image.png)
+![](https://github.com/Luwcj/SQLi/blob/main/Portswigger/SQL%20injection%20attack,%20querying%20the%20database%20type%20and%20version%20on%20Oracle/1.1.png?raw=true)
 
 Vậy là cả hai cột đều có kiểu dữ liệu `string`(kiểu dữ liệu chuỗi cũng là kiểu dữ liệu diễn tả phiên bản oracle đang dùng)
 
 Tiếp theo ta truy cập vào cột `BANNER` của bảng `v$version` :
 - `' UNION SELECT NULL,BANNER FROM v$version--`
 
-![](https://cdn.discordapp.com/attachments/1124588087931043891/1134410334531227659/image.png)
+![](https://github.com/Luwcj/SQLi/blob/main/Portswigger/SQL%20injection%20attack,%20querying%20the%20database%20type%20and%20version%20on%20Oracle/1.2.png?raw=true)
