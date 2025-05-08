@@ -1,4 +1,4 @@
-# SQL injection attack, querying the database type and version on MySQL and Microsoft
+![image](https://github.com/user-attachments/assets/12fdbefd-c347-4902-8f7d-2a2bb5ccb270)# SQL injection attack, querying the database type and version on MySQL and Microsoft
 
 Bài lab này yêu cầu ta truy cập vào dữ liệu liên quan tới version của phiên bản MySQL, Microsoft.
 
@@ -10,9 +10,9 @@ Bài lab này yêu cầu ta truy cập vào dữ liệu liên quan tới version
 Tiếp theo ta tiến hành kiểm tra kiểu dữ liệu trong cột xem có phải ở dạng chuỗi không(vì thông tiên phiên bản được hiển thị ở dạng chuỗi) với payload của `Get request` như sau:
 - `/filter?category=Gifts'+UNION+SELECT+'abc',+'def'#`
 
-![](https://cdn.discordapp.com/attachments/1124588087931043891/1134520173227937863/image.png)
+![](https://github.com/Luwcj/SQLi/blob/main/Portswigger/SQL%20injection%20attack,%20querying%20the%20database%20type%20and%20version%20on%20MySQL%20and%20Microsoft/2.1.png?raw=true)
 
 Tiếp theo ta truy cập vào dữ liệu trong cột @@version và lấy thông tin thui:
 - `/filter?category='+UNION+SELECT+@@version,NULL#`
 
-![](https://cdn.discordapp.com/attachments/1124588087931043891/1134520961182482493/image.png)
+![](https://github.com/Luwcj/SQLi/blob/main/Portswigger/SQL%20injection%20attack,%20querying%20the%20database%20type%20and%20version%20on%20MySQL%20and%20Microsoft/2.2.png?raw=true)
