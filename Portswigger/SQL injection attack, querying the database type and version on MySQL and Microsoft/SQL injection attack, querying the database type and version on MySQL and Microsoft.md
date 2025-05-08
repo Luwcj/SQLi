@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/12fdbefd-c347-4902-8f7d-2a2bb5ccb270)# SQL injection attack, querying the database type and version on MySQL and Microsoft
+# SQL injection attack, querying the database type and version on MySQL and Microsoft
 
 Bài lab này yêu cầu ta truy cập vào dữ liệu liên quan tới version của phiên bản MySQL, Microsoft.
 
