@@ -31,7 +31,8 @@ Sử dụng câu lệnh sau để xem có bao nhiêu kí tự trong mật khẩu
 
 Vậy là mật khẩu quản trị viên chưa 20 kí tự.
 
-![](https://cdn.discordapp.com/attachments/1124588087931043891/1135946312303525919/image.png)
+![]([https://cdn.discordapp.com/attachments/1124588087931043891/1135946312303525919/image.png](https://github.com/Luwcj/SQLi/blob/main/Portswigger/Blind%20SQL%20injection%20with%20conditional%20responses/5.1.png))
+![]()
 
 Tiếp theo ta sử dụng câu lệnh sau để dò từng kí tự của mật khẩu:
 - `TrackingId=xxx' AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')='3`
